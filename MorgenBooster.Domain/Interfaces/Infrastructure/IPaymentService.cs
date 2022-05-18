@@ -4,5 +4,5 @@ namespace MorgenBooster.Domain.Interfaces.Infrastructure;
 
 public interface IPaymentService
 {
-    Task<Order> PayOrder(Order order);
+    Task<Order> Process(Order order);
 }

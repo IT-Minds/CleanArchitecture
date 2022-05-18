@@ -1,5 +1,5 @@
-﻿using MorgenBooster.Domain.Entities;
-using MorgenBooster.Domain.Interfaces.Infrastructure;
+﻿using MorgenBooster.Application.Interfaces;
+using MorgenBooster.Domain.Entities;
 
 namespace MorgenBooster.Infrastructure.Gmail
 {

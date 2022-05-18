@@ -6,7 +6,7 @@ namespace MorgenBooster.Infrastructure.PaymentService;
 public class PayPalService : IPaymentService
 {
 
-    public Task<Order> PayOrder(Order order)
+    public Task<Order> Process(Order order)
     {
         // Do api magic.
         order.Status = OrderStatus.Paid;

@@ -1,6 +1,6 @@
 ﻿using MorgenBooster.Domain.Entities;
 
-namespace MorgenBooster.Domain.Interfaces.Infrastructure
+namespace MorgenBooster.Application.Interfaces
 {
 	public interface IMailService
 	{

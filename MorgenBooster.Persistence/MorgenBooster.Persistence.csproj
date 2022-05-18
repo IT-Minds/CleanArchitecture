@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MorgenBooster.Domain\MorgenBooster.Domain.csproj" />
+    <ProjectReference Include="..\MorgenBooster.Application\MorgenBooster.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace MorgenBooster.Domain.Entities
 {
-	public class Order
+	public class Order : BaseEntity
 	{
 	}
 }

@@ -5,6 +5,8 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>MorgenBooster.IntegrationTest</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,8 +24,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MorgenBooster.Infrastructure\MorgenBooster.Infrastructure.csproj" />
-      <ProjectReference Include="..\MorgenBooster.Persistence\MorgenBooster.Persistence.csproj" />
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+      <ProjectReference Include="..\Persistence\Persistence.csproj" />
     </ItemGroup>
 
 </Project>

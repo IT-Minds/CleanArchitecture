@@ -14,6 +14,6 @@ public class Cart : BaseEntity
         var order = new Order(); // should be from cart
         payment.Process(order);
         
-        return new Order();
+        return order;
     }
 }

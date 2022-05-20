@@ -1,5 +1,5 @@
-﻿using MorgenBooster.Domain.Entities;
-using MorgenBooster.Domain.Interfaces.Persistence;
+﻿using MorgenBooster.Application.Interfaces.Persistence;
+using MorgenBooster.Domain.Entities;
 
 namespace MorgenBooster.Persistence.EntityFramework
 {

@@ -1,17 +1,17 @@
 ﻿using MorgenBooster.Application.Queries.Interfaces;
 using MorgenBooster.Domain.Entities;
-using MorgenBooster.Domain.Interfaces.Persistence;
+using MorgenBooster.Application.Interfaces.Persistence;
 
 namespace MorgenBooster.Application.Queries
 {
-	public class GetOrderQuery : IQuery<int, Order>
+	public class GetOrderQueryHandler : IQueryHandler<int, Order>
 	{
 		private readonly IRepository<Order, int> _repository;
-		public GetOrderQuery(IRepository<Order, int> repository)
+		public GetOrderQueryHandler(IRepository<Order, int> repository)
 		{
 			_repository = repository;
 		}
-		public Order Execute(int input)
+		public Order Handle(int input)
 		{
 			try
 			{

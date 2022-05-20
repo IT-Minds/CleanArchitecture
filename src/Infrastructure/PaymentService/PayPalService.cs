@@ -1,22 +1,26 @@
 using MorgenBooster.Domain.Entities;
-using MorgenBooster.Domain.Interfaces.Infrastructure;
+using MorgenBooster.Application.Interfaces.Infrastructure;
 using Microsoft.Extensions.Logging;
 
-namespace MorgenBooster.Infrastructure.PaymentService;
-
-public class PayPalService : IPaymentService
+namespace MorgenBooster.Infrastructure.PaymentService
 {
-    private readonly IHttpClientFactory _httpClientFactory;
 
-    public PayPalService(IHttpClientFactory httpClientFactory)
+    public class PayPalService : IPaymentService
     {
-        _httpClientFactory = httpClientFactory;
-    }
+        private readonly HttpClient _httpClient;
 
-    public Task<Order> Process(Order order)
-    {
-        // Do api magic. using http client
-        order.Status = OrderStatus.Paid;
-        return Task.FromResult(order);
+        public PayPalService(HttpClient httpClient)
+        {
+            _httpClient = httpClient;
+        }
+
+        public Task<bool> Process(Order order)
+        {
+            var result = false;
+
+            // Do api magic. using http client
+
+            return Task.FromResult(result);
+        }
     }
 }

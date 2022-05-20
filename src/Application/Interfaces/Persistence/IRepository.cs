@@ -1,4 +1,4 @@
-﻿namespace MorgenBooster.Domain.Interfaces.Persistence
+﻿namespace MorgenBooster.Application.Interfaces.Persistence
 {
 	public interface IRepository<TEntity, TId>
 	{

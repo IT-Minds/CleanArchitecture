@@ -1,10 +1,8 @@
-namespace MorgenBooster.Application.Commands;
-
-public class CheckoutOrderCommand
+namespace MorgenBooster.Application.Commands
 {
-    public CheckoutOrderCommand(int cartId)
+    public class CheckoutOrderCommand
     {
-        CartId = cartId;
+        public int UserId { get; set; }
+        public int CartId { get; set; }
     }
-    public int CartId { get; set; }
 }

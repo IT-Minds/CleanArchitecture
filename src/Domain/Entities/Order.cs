@@ -1,16 +1,10 @@
-﻿using Microsoft.VisualBasic;
-
-namespace MorgenBooster.Domain.Entities
+﻿namespace MorgenBooster.Domain.Entities
 {
-	public enum OrderStatus
-	{
-		Open,
-		Paid
-	}
-	
 	public class Order : BaseEntity
 	{
-		public OrderStatus Status { get; set; } = OrderStatus.Open;
+		public User User { get; set; } = new User();
+		public OrderStatus Status { get; set; } = OrderStatus.Pending;
+		public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 	}
 
 

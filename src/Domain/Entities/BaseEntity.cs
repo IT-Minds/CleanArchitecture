@@ -1,6 +1,8 @@
-namespace MorgenBooster.Domain.Entities;
-
-public class BaseEntity
+namespace MorgenBooster.Domain.Entities
 {
-    public int Id { get; protected set; }
+
+    public class BaseEntity
+    {
+        public int Id { get; set; }
+    }
 }

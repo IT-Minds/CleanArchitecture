@@ -21,9 +21,9 @@ public class PayPalTest
         PayPalService sut = serviceProvider.GetRequiredService<PayPalService>();
 
         Order order = new Order();
-        Order paidOrder = await sut.Process(order);
+        var paidOrder = await sut.Process(order);
 
-        Assert.Equal(OrderStatus.Paid, paidOrder.Status);
+        Assert.False(paidOrder);
     }
     
 }

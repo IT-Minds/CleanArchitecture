@@ -5,7 +5,7 @@ using EntityFrameworkCore.Testing.Moq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MorgenBooster.Domain.Entities;
-using MorgenBooster.Domain.Interfaces.Persistence;
+using MorgenBooster.Application.Interfaces.Persistence;
 using MorgenBooster.Persistence;
 using MorgenBooster.Persistence.EntityFramework;
 using Xunit;
